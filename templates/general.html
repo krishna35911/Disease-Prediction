@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+    <head>
+        <style>
+        .button {
+            background-color: #0000FF;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          </style>
+        
+    </head>
+    <body background="{% static 'kk.jpg' %}">
+        <center>
+        <h2>GENERAL DISEASE..</h2></center>
+        <br><br>
+
+
+
+<center>
+    <form method="POST">
+        {% csrf_token %}
+        <textarea id="area" name="area" placeholder="Enter your symptoms....."
+        style="width: 350px;height: 200px;
+               padding: 10px; border:3px dashed indigo;
+               background-color:aliceblue;">
+</textarea>
+
+<br><br><br>
+<input class="button" name="Submit" type="Submit" value="predict" />
+
+<br>
+<br>
+<center><b><a href="/index1  style="color:rgb(242, 230, 236);font-size: 25px;" >Back To Home</a></b></center>
+    </form>
+
+</center>
+</body>
+</html>

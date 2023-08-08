@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+    <body>
+        <center>
+        <form method="POST" action="/log/">
+            <h2><b>LOGIN HERE....</b></h2>
+            {% csrf_token %}
+            <label>Email:</label>
+            <input type="text" name="email" id="email" required><br><br>
+            <label>Password:</label>
+            <input type="password" name="psw" id="psw" required><br><br>
+            <input type="submit" value="submit">
+        </form>
+    </center>
+    </body>
+    </html>

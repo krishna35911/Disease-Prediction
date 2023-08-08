@@ -1,0 +1,58 @@
+{% load static %}
+<html>
+   
+    <meta charset="UTF-8">
+    <title> </title>
+    <head>
+        <style>
+            .button {
+                background-color: #0000FF;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+              }
+              .t1{
+                width: 350px;height: 200px;
+               padding: 10px; border:3px dashed indigo;
+               background-color:aliceblue;
+              }
+              </style>
+    </head>
+    <body background="{% static 'kk.jpg' %}">
+        
+    <form action="" method="POST">
+    {% csrf_token %}
+   
+   
+  
+    <br><br><br><br>
+    <h1><b><center>RESULT </center></b></h1>
+   <center>
+    <table border="1">
+        <tbody >
+        
+ <tr name="t1"><td><b>TEXT :</b></td><td >{{entered_text}}</td></tr><br>
+
+
+
+
+
+    </table>
+</tbody>
+<br><br><br>
+   
+    <center><b><a href="/index" >Back To Home</a></b></center>
+ 
+  
+    
+    </center>
+</form>
+    </body>
+   
+</html>

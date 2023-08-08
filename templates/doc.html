@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="{% static 'assests1/https://fonts.googleapis.com/css?family=Poppins' %}" rel="stylesheet" />
+    <link href="{% static 'assests1/css/main.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="s01">
+      <form method="POST" action="/log1/">
+        <fieldset>
+          <legend>Search for your doctors...</legend>
+          {% csrf_token %}
+        </fieldset>
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+            <input type="text" name="spcl" id="spcl" placeholder="Specialization"/>
+          </div>
+          <div class="input-field second-wrap">
+            <input type="text" name="hos" id="hos" placeholder="Hospital Name..">
+          </div>
+          <div class="input-field third-wrap">
+            <input type="submit" value="search.." class="btn-search">
+          </div>
+        </div>
+      </form>
+    </div>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+
